@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <label>Rotation X</label>
+        <input type="range" min="-180" max="180" value="0" step="10" id="rotationX" />
+        <button id="rotationXReset">Reset</button>
+      </div>
+      <div>
+        <label>Rotation Y</label>
+        <input type="range" min="-180" max="180" value="0" step="10" id="rotationY" />
+        <button id="rotationYReset">Reset</button>
+      </div>
+      <div>
+        <label>Rotation Z</label>
+        <input type="range" min="-180" max="180" value="0" step="10" id="rotationZ" />
+        <button id="rotationZReset">Reset</button>
+      </div>
+    </div>
+
+    <div>
+      <label>Model</label>
+      <select id="modelSelect">
+        <option value="fox">Fox</option>
+        <option value="car">Car</option>
+        <option value="cube">Cube</option>
+        <option value="monkey">Monkey</option>
+        <option value="sphere">Sphere</option>
+        <option value="cat">Cat (high poly, long loading)</option>
+      </select>
+    </div>
+
+    <br />
+
+    <canvas id="canvas"></canvas>
+
+    <script src="src/main.ts"></script>
+  </body>
+</html>
